@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -160,7 +160,7 @@ namespace WindowsFormsApp2
         {
             using (HttpClient client = new HttpClient())
             {
-                Uri url = new Uri("http://unite.md");
+                Uri url = new Uri("https://developer.mozilla.org");
                 using (HttpResponseMessage response = await client.SendAsync(new HttpRequestMessage(HttpMethod.Options, url)))
                 {
                     richTextBox1.Text = response.ToString();
